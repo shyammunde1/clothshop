@@ -79,7 +79,7 @@ const LoginForm = () => {
 
         <div className="buttons-container">
           <Button  type="submit">
-            LOGIN
+          LOGIN
           </Button>
           <Button type='button' buttonType="google" onClick={loginGoogleUser}>
             Google Login
