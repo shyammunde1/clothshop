@@ -16,7 +16,7 @@ const SignUpForm = () => {
 
     const [formFields, setFormFields] = useState(defaultFormFields)
     const { displayName, email, password, confirmPassword } = formFields;
-    console.log(formFields)
+    
 
 
     const handleSubmitForm = async (e) => {
@@ -58,7 +58,7 @@ const SignUpForm = () => {
 
                 <FormInput label="confirm Password" type="password" name="confirmPassword" onChange={handlechange} value={confirmPassword} required />
 
-                <Button buttonType='inverted' type="submit"> Sign Up</Button>
+                <Button buttonType='' type="submit"> Sign Up</Button>
             </form>
         </div>
     )
