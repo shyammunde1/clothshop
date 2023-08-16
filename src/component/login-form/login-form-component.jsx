@@ -26,8 +26,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      const response = await LoginwithEmailAndPassword(email, password);
-      console.log(response);
+      await LoginwithEmailAndPassword(email, password);
       resetFormFields();
     } catch (error) {
       switch (error.code) {
@@ -78,10 +77,8 @@ const LoginForm = () => {
         />
 
         <div className="buttons-container">
-          <Button  type="submit">
-          LOGIN
-          </Button>
-          <Button type='button' buttonType="google" onClick={loginGoogleUser}>
+          <Button type="submit">LOGIN</Button>
+          <Button type="button" buttonType="google" onClick={loginGoogleUser}>
             Google Login
           </Button>
         </div>
