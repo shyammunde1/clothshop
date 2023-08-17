@@ -10,6 +10,7 @@ const initialUser = {
 };
 
 export const userContext = createContext(initialUser);
+
 export const UserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState("");
   const value = { currentUser, setCurrentUser };
