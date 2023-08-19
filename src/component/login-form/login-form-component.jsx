@@ -56,7 +56,7 @@ const LoginForm = () => {
   return (
     <div className="login-container">
       <h2>Already have an account?</h2>
-      <span>sign up with your Email and Password</span>
+      <span>Login with Email and Password</span>
       <form action="" onSubmit={handleSubmitForm}>
         <FormInput
           label="Email"
